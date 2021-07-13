@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bodyCal.css">
+    <title>Body value</title>
+</head>
+
+<body>
+    <div class="header">
+            header topMenu
+    </div>
+    <div class="title">
+            <Strong>Body Calculator</Strong>
+    </div>
+    <div id="mainBox">
+        <div id="explain">
+            <article>
+                <h4>What is BMR ?</h4>
+                <p>
+                    It’s the amount of energy your body burns if you do nothing but rest for 24 hours.
+                </p>
+            </article>
+            <article>
+                <h4>What is TDEE ?</h4>
+                <p>
+                    This is the amount of energy calories, your body burns every day performing its bodily functions and also physical movement like daily activities and exercise.
+                </p>
+            </article>
+            <article>
+                <h4>What is FFMI ?</h4>
+                <p>
+                    FFMI stands for fat free body mass index with which you can calculate the amount of muscle mass relative to height ,better than
+                    BMI.
+                </p>
+            </article>
+            <article>
+                <img src="/images/BodyMassIndex-1536x977.png" alt="FFMI level" width="49%">
+            </article>
+        </div>
+        <div id="calculator">
+        <form id="theForm">
+    
+            <label>Height(cm) : </label>
+            <input type="number" id="height" step="0.01" max="250.00" min="70.00">
+
+            <label>Weight(kg) : </label>
+            <input type="number" id="weight" step="0.01" max="300.00" min="30.00">
+
+            <label>Age : </label>
+            <input type="number" id="age">
+
+            <label>Body Fat Percentage(%) : </label>
+            <input type="number" id="fp" step="0.01" max="100.00" min="1.00">
+            
+            <div class="choice">
+                <label>Gender :</label>
+                <input type="radio" name="gender" class="gender" value="Male" checked>Male
+                <input type="radio" name="gender" class="gender" value="Female">Female
+            </div>
+
+            <div class="choice">
+                <label>Activity level :</label>
+                <select name="" id="activity">
+                    <option value="1">1-2 times a week</option>
+                    <option value="2">3-5 times a week</option>
+                    <option value="3">6-7 times a week</option>
+                    <option value="4">Labor intensive</option>
+                    <option value="0">none</option>
+                </select>
+            </div>
+
+            <button type="submit" id="cal">
+                Calculation</button>
+
+            <label>BMI : </label>
+            <div class="result BMI">
+            
+            </div>
+
+             <label>BMR : </label>
+            <div class="result BMR">
+            
+            </div>   
+
+            <label>TDEE : </label>
+            <div class="result TDEE">
+
+            </div>
+
+            <label>FFMI : </label>
+            <div class="result FFMI">
+        
+                    </div>
+        </form>
+        </div>
+    </div>
+    <div class="footer">
+        footer copyRight
+    </div>
+    <script src="bodyCal.js"></script>    
+</body>
+
+</html>
